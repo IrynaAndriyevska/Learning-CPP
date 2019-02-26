@@ -1,0 +1,25 @@
+#include <cstdio>
+using namespace std;
+
+struct Employee {
+    int id;
+    const char * name;
+    const char * lastname;
+};
+
+int main() {
+    Employee sourcer1 = { 1, "Anastasia", "Niarchou" };
+    
+    printf("%s  %s \id %d\n",
+           sourcer1.name, sourcer1.lastname, sourcer1.id);
+	Employee sourcer2 = { 2, "Beata", "Pozniak" };
+
+	printf("%s  %s \id %d\n",
+		sourcer2.name, sourcer2.lastname, sourcer2.id);
+	Employee sourcer3 = { 3, "Iryna", "Andriievska" };
+
+	printf("%s  %s \id %d\n",
+		sourcer3.name, sourcer3.lastname, sourcer3.id);
+    
+    return 0;
+}
